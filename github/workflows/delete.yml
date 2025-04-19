@@ -1,0 +1,16 @@
+name: Delete File
+
+on:
+  workflow_dispatch:
+
+jobs:
+  delete:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Delete file
+        run: |
+          git rm "우주 속의 큐비비.png"
+          git commit -m "Remove 우주 속의 큐비비.png"
+          git push
