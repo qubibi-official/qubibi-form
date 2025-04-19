@@ -2,24 +2,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qubibi Form</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Qubibi - Cute, but Quantum.</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="form-wrapper">
-        <div class="form-card">
-            <img src="https://qubibi-official.github.io/assets/qubibi-logo.png" alt="Qubibi Logo" class="logo">
-            <h1>Welcome to Qubibi</h1>
-            <form id="qubibi-form" name="submit-to-google-sheet">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <button type="submit">Join Qubibi's Journey!</button>
-                <span id="msg"></span>
-            </form>
-        </div>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Qubibi</h1>
+      <p>A newborn quantum cube from the stars.</p>
+      <a href="#join" class="cta-button">Join the Journey</a>
     </div>
-    <script src="script.js"></script>
+  </section>
+
+  <section class="about">
+    <h2>What is Qubibi?</h2>
+    <p>Qubibi is a sentient quantum cube born in the vastness of space. With each step, it learns, grows, and unlocks the mysteries of the quantum world.</p>
+  </section>
+
+  <section class="features">
+    <h2>Why Qubibi?</h2>
+    <ul>
+      <li>🌌 Quantum-native Meme Project</li>
+      <li>🧠 Growing Intelligence</li>
+      <li>✨ Cute, but Quantum.</li>
+    </ul>
+  </section>
+
+  <section class="join" id="join">
+    <h2>Join the Qubibi Journey</h2>
+    <form name="submit-to-google-sheet">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Why do you love Qubibi?" rows="4"></textarea>
+      <button type="submit">Submit</button>
+      <span id="msg"></span>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Qubibi. Cute, but Quantum.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
