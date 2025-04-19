@@ -14,7 +14,6 @@ form.addEventListener('submit', e => {
     .catch(error => console.error('Error!', error.message));
 });
 
-// Toggle menu visibility
 const toggle = document.getElementById('menu-toggle');
 const menu = document.getElementById('nav-menu');
 toggle.addEventListener('click', () => {
