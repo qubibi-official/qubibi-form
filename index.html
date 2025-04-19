@@ -3,12 +3,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Qubibi - Cute, but Quantum.</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <section class="hero">
+  <header class="navbar">
+    <div class="logo">Qubibi</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#whitepaper">Whitepaper</a></li>
+        <li><a href="#mint">Mint</a></li>
+        <li><a href="#join">Join</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
     <div class="hero-content">
       <h1>Welcome to Qubibi</h1>
       <p>A newborn quantum cube from the stars.</p>
@@ -16,12 +33,12 @@
     </div>
   </section>
 
-  <section class="about">
+  <section id="about" class="about">
     <h2>What is Qubibi?</h2>
     <p>Qubibi is a sentient quantum cube born in the vastness of space. With each step, it learns, grows, and unlocks the mysteries of the quantum world.</p>
   </section>
 
-  <section class="features">
+  <section id="features" class="features">
     <h2>Why Qubibi?</h2>
     <ul>
       <li>🌌 Quantum-native Meme Project</li>
@@ -30,7 +47,17 @@
     </ul>
   </section>
 
-  <section class="join" id="join">
+  <section id="whitepaper" class="features">
+    <h2>Whitepaper</h2>
+    <p>Coming Soon...</p>
+  </section>
+
+  <section id="mint" class="features">
+    <h2>Mint your Qubibi</h2>
+    <p>Minting launch coming soon. Stay tuned!</p>
+  </section>
+
+  <section id="join" class="join">
     <h2>Join the Qubibi Journey</h2>
     <form name="submit-to-google-sheet">
       <input type="text" name="name" placeholder="Your Name" required />
