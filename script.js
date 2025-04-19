@@ -14,9 +14,9 @@ form.addEventListener('submit', e => {
     .catch(error => console.error('Error!', error.message));
 });
 
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
-
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
+// Toggle menu visibility
+const toggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('nav-menu');
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('active');
 });
