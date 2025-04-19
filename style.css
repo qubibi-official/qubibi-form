@@ -2,14 +2,15 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  background: url('https://images.unsplash.com/photo-1519608487953-e999c86e7455') no-repeat center center fixed;
+  background-size: cover;
   color: #fff;
   scroll-behavior: smooth;
 }
 header.navbar {
   position: fixed;
   width: 100%;
-  background: rgba(15, 12, 41, 0.7);
+  background: rgba(15, 12, 41, 0.6);
   display: flex;
   justify-content: space-between;
   align-items: center;
