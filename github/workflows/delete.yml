@@ -8,9 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-      - name: Delete file
+        uses: actions/checkout@v3
+
+      - name: Delete 우주 속의 큐비비.png
         run: |
           git rm "우주 속의 큐비비.png"
-          git commit -m "Remove 우주 속의 큐비비.png"
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git commit -m "Delete 우주 속의 큐비비.png"
           git push
