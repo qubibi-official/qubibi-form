@@ -2,10 +2,19 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: url('우주 속의 큐비비.png') no-repeat center center fixed;
+  background: url('background.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #fff;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+#particle-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 header.navbar {
   position: fixed;
@@ -16,7 +25,7 @@ header.navbar {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  z-index: 1000;
+  z-index: 10;
 }
 .logo {
   font-size: 1.5rem;
@@ -40,17 +49,28 @@ header.navbar {
 .hero {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
-.hero h1 {
-  font-size: 3rem;
+.qubibi {
+  width: 120px;
+  animation: fadeIn 2s ease-in;
+  margin-bottom: 20px;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.7); }
+  to { opacity: 1; transform: scale(1); }
 }
 section {
   padding: 80px 20px;
   max-width: 800px;
   margin: auto;
+  position: relative;
+  z-index: 1;
 }
 form {
   background: rgba(255, 255, 255, 0.1);
